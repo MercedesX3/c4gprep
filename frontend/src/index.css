@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary-yellow: rgba(255, 178, 0, 1);
+  --color-primary-blue: rgba(85, 183, 223, 1);
+  --color-secondary-yellow: rgba(255, 205, 90, 1);
+  --color-secondary-blue: rgba(179, 224, 242, 1);
+  --color-font-light: rgba(255,255,255,1);
+  --color-font-dark: rgba(12, 17, 11, 1);
+  --color-font-placeholder: rgba(81, 81, 81, 1);
+  --color-background-light: rgba(250, 251, 255, 1);
+  --color-modal-background: rgba(0,0,0,0);
+  --color-modal-outline: rgba(229, 239, 242, 1);
+  --font-inter: "Inter", sans-serif; 
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+html{
+  overscroll-behavior: none;
+}
